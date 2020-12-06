@@ -341,7 +341,7 @@ int main(int argc, char* argv[]) {
         fprintf(diag, "- EEPROM     : none \n");
     }
 	fprintf(diag, "- Option RAM : %db\n", stm->dev->opt_end - stm->dev->opt_start + 1);
-	fprintf(diag, "- System RAM : %dKiB\n", (stm->dev->mem_end - stm->dev->mem_start) / 1024);
+	fprintf(diag, "- System ROM : %dKiB\n", (stm->dev->mem_end - stm->dev->mem_start) / 1024);
 
 	uint8_t		buffer[256];
 	uint32_t	addr, start, end;
